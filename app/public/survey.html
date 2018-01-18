@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FriendFinder - Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class = "card-header">
+           <h1>Survey Questions</h1>
+        </div>
+        
+        <div class = "card-title ml-4">
+            <br>
+            <h3><strong>About You</strong></h3>
+            <h5>Name (Required)</h5>
+            <input type="text" id="name" class="form-control" required>
+            
+            <h5>Link to Photo Image (Required)</h5>
+            <input type="text" id="photo" class="form-control" required>
+            <hr>
+            <!-- Questions -->
+                <h3>
+                    <strong>Question 1</strong>
+                </h3>
+                <h5>You are open to new adventures.</h5>
+                <select class="qs"  id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+                
+
+                <h3>
+                    <strong>Question 2</strong>
+                </h3>
+                <h5>Money/wealth is not important in a match.</h5>
+                <select class="qs"  id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+               
+
+                <h3>
+                    <strong>Question 3</strong>
+                </h3>
+                <h5>Your religion is very important to you.</h5>
+                <select class="qs"  id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+                
+                <h3>
+                    <strong>Question 4</strong>
+                </h3>
+                <h5>Jealously is healthy in a relationship.</h5>
+                <select class="qs"  id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 5</strong>
+                </h3>
+                <h5>You can be in a commited relationship with someone who regularly smokes pot (at least 2 times a week)</h5>
+                <select class="qs"  id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 6</strong>
+                </h3>
+                <h5>You are fine if your partner still hangs out with his/her ex.</h5>
+                <select class="qs"  id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 7</strong>
+                </h3>
+                <h5>You are always open with your feelings.</h5>
+                <select class="qs"  id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 8</strong>
+                </h3>
+                <h5>Homosexuality is a sin.</h5>
+                <select class="qs"  id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 9</strong>
+                </h3>
+                <h5>Men should be the head of the household.</h5>
+                <select class="qs"  id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select class="qs" >
+
+                <h3>
+                    <strong>Question 10</strong>
+                </h3>
+                <h5>Everybody should participate in elections by voting.</h5>
+                <select class="qs"  id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            <!-- End Questions -->
+                <hr>
+            <button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
+        </div>
+
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img" src="" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="card-footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- FOR THE MODAL -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function(event){
+        event.preventDefault();
+
+        function complete(){
+            let isValid = true;
+            $(".form-control").each(function(){
+                if ($(this).val()===""){
+                    isValid = false;
+                }
+            })
+            $(".qs").each(function(){
+                if($(this).val()===""){
+                    isValid = false;
+                }
+            })
+            return isValid;
+        }
+
+        if (complete()){
+
+            let newFriend = {
+            name: $("#name").val(),
+                photo: $("#photo").val(),
+                "scores": [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+
+
+            $.post("/api/friends", newFriend, function(data){
+                // console.log(data);
+                // console.log(data[1].scores);                       WILL BE UNDEFINED
+                // let new = data.length
+                // for (var i = 0; i<new; i++){
+                //     for(var j = 0; j<10; j++){
+                //         console.log("i is " + i);
+                //         console.log("j is "+j);
+                        // let Totaldifference += Math.abs(data[i].scores[j]-data[new].scores[j])       WILL ONLY WORK IN THE CASE OF 2 USERS
+
+                // PSEUDOCODE: Calculate the the difference between the new user (the last one) and all of the users in our friendsArray   
+                // If the TotalDifference is bigger than the previous TotalDifference, set that as the new TotalDifference
+                // The math I calculated above will not work but I am keeping it to remind me how i want to use a double loop
+                // The data[i].name with the greatest TotalDifference will be called "match"
+                // I would then change the bottom code to .text(match.name) and match.photo
+                $("#match-name").text(data[0].name); 
+                $("#match-img").attr("src", data[0].photo);
+            });
+        }//end if
+        else {
+            $("#match-name").text("Please complete all forms before submitting!");
+        }
+    })//end submit button
+</script>
