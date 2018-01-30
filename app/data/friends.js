@@ -2,9 +2,9 @@ console.log("Friends loaded");
 
 let friendsArray = [
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
-        "scores": [
+        name: "Ahmed",
+        photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        "scores[]": [
             5,
             1,
             4,

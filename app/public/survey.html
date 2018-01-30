@@ -129,7 +129,7 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
-                </select class="qs" >
+                </select>
 
                 <h3>
                     <strong>Question 9</strong>
@@ -142,7 +142,7 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
-                </select class="qs" >
+                </select  >
 
                 <h3>
                     <strong>Question 10</strong>
@@ -227,10 +227,10 @@
 
         if (complete()){
 
-            let newFriend = {
-            name: $("#name").val(),
+            const newFriend = {
+                name: $("#name").val(),
                 photo: $("#photo").val(),
-                "scores": [
+                scores: [
                     $("#q1").val(),
                     $("#q2").val(),
                     $("#q3").val(),
@@ -244,24 +244,29 @@
                 ]
             };
 
-
             $.post("/api/friends", newFriend, function(data){
-                // console.log(data);
-                // console.log(data[1].scores);                       WILL BE UNDEFINED
-                // let new = data.length
-                // for (var i = 0; i<new; i++){
-                //     for(var j = 0; j<10; j++){
-                //         console.log("i is " + i);
-                //         console.log("j is "+j);
-                        // let Totaldifference += Math.abs(data[i].scores[j]-data[new].scores[j])       WILL ONLY WORK IN THE CASE OF 2 USERS
-
-                // PSEUDOCODE: Calculate the the difference between the new user (the last one) and all of the users in our friendsArray   
-                // If the TotalDifference is bigger than the previous TotalDifference, set that as the new TotalDifference
-                // The math I calculated above will not work but I am keeping it to remind me how i want to use a double loop
-                // The data[i].name with the greatest TotalDifference will be called "match"
-                // I would then change the bottom code to .text(match.name) and match.photo
-                $("#match-name").text(data[0].name); 
-                $("#match-img").attr("src", data[0].photo);
+                console.log('After post ' + data[1]["scores[]"][0]);
+                var myScore = data.pop();
+                console.log("my score: " + JSON.stringify(myScore));
+                var collection = [];
+                for (var i = 0; i<data.length; i++){
+                    var Diff = 0;
+                    for (var j =0; j<data[i]["scores[]"].length; j++){
+                         Diff += Math.abs(data[i]["scores[]"][j] - myScore["scores[]"][j]);
+                    }
+                    collection.push({name: data[i].name,
+                                    diff: Diff})
+                }
+                var lowestDiff = 10000;
+                var BFFindex;
+                for (var i = 0; i<collection.length; i++){
+                    if (collection[i].diff < lowestDiff){
+                        lowestDiff = collection[i].diff;
+                        BFFindex = i;
+                    }
+                }
+                $("#match-name").text(data[BFFindex].name); 
+                $("#match-img").attr("src", data[BFFindex].photo);
             });
         }//end if
         else {
